@@ -1,10 +1,9 @@
-/* Osnovne varijable za boje i fontove */
+/* Osnovne boje */
 :root {
   --font-base: 'Poppins', sans-serif;
-  --color-bg: #ffffff;
-  --color-text: #333333;
-  --color-primary: #000000; /* možeš promijeniti ako želiš neku drugu boju */
-  --color-accent: #555555;
+  --color-bg: #ffffff;    /* bijela */
+  --color-text: #111111;  /* crna */
+  --color-accent: #f5f5dc; /* krem */
 }
 
 * {
@@ -20,13 +19,14 @@ body {
   line-height: 1.6;
 }
 
+/* Navigacija */
 nav {
   position: fixed;
   top: 0;
   width: 100%;
   background: var(--color-bg);
   padding: 20px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   z-index: 100;
 }
 
@@ -45,15 +45,17 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
 
+/* Hero sekcija */
 header#about {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  background: var(--color-accent);
   padding: 0 20px;
 }
 
@@ -64,15 +66,23 @@ header .hero-content h1 {
 
 header .hero-content p {
   font-size: 1.2rem;
-  color: var(--color-accent);
+  color: #444;
 }
 
+/* Sekcije */
 section {
   padding: 80px 20px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
+h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Projekti */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -81,17 +91,16 @@ section {
 
 .project-item img {
   width: 100%;
-  height: auto;
-  display: block;
   border-radius: 8px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-item:hover img {
   transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
+/* Blog */
 .blog-posts .post {
   margin-bottom: 40px;
 }
@@ -101,15 +110,16 @@ section {
 }
 
 .blog-posts .post a {
-  color: var(--color-primary);
+  color: var(--color-text);
   text-decoration: none;
   font-weight: 500;
 }
 
 .blog-posts .post a:hover {
-  text-decoration: underline;
+  color: var(--color-accent);
 }
 
+/* Kontakt */
 form input, form textarea {
   width: 100%;
   padding: 15px;
@@ -120,7 +130,7 @@ form input, form textarea {
 }
 
 form button {
-  background: var(--color-primary);
+  background: var(--color-text);
   color: var(--color-bg);
   padding: 15px 30px;
   border: none;
@@ -132,11 +142,13 @@ form button {
 
 form button:hover {
   background: var(--color-accent);
+  color: var(--color-text);
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 40px 20px;
-  color: var(--color-accent);
-  background: #f5f5f5;
+  background: var(--color-accent);
+  color: var(--color-text);
 }
