@@ -3,61 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moj Portfolio</title>
+  <title>Marta Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigacija -->
   <nav>
     <ul>
-      <li><a href="#home">Početna</a></li>
       <li><a href="#about">O meni</a></li>
-      <li><a href="#work">Portfolio</a></li>
-      <li><a href="#skills">Vještine</a></li>
+      <li><a href="#work">Radovi</a></li>
+      <li><a href="#blog">Blog</a></li>
       <li><a href="#contact">Kontakt</a></li>
     </ul>
   </nav>
 
-  <!-- Hero sekcija -->
-  <section id="home">
-    <h1>Bok, ja sam Marta!</h1>
-    <p>Knjižničar i zaljubljenik u digitalne projekte 📚💻</p>
-  </section>
+  <header id="about">
+    <div class="hero-content">
+      <h1>Bok, ja sam Marta</h1>
+      <p>Kratko o meni — što radim, što me zanima...</p>
+    </div>
+  </header>
 
-  <!-- O meni -->
-  <section id="about">
-    <h2>O meni</h2>
-    <p>Kratka biografija i iskustvo...</p>
-  </section>
-
-  <!-- Portfolio -->
   <section id="work">
-    <h2>Portfolio</h2>
-    <div class="projects">
-      <div class="project">Projekt 1</div>
-      <div class="project">Projekt 2</div>
-      <div class="project">Projekt 3</div>
+    <h2>Radovi</h2>
+    <div class="projects-grid">
+      <div class="project-item">
+        <img src="link-do-slike1.jpg" alt="Projekt 1">
+        <h3>Projekt 1</h3>
+        <p>Kratak opis projekta.</p>
+      </div>
+      <div class="project-item">
+        <img src="link-do-slike2.jpg" alt="Projekt 2">
+        <h3>Projekt 2</h3>
+        <p>Kratak opis projekta.</p>
+      </div>
+      <!-- dodaj više projekata -->
     </div>
   </section>
 
-  <!-- Vještine -->
-  <section id="skills">
-    <h2>Vještine</h2>
-    <ul>
-      <li>HTML / CSS / JS</li>
-      <li>Rad u knjižničnim bazama</li>
-      <li>Organizacija informacija</li>
-    </ul>
+  <section id="blog">
+    <h2>Blog</h2>
+    <div class="blog-posts">
+      <article class="post">
+        <h3>Naslov bloga 1</h3>
+        <p>Uvodni tekst bloga...</p>
+        <a href="#">Pročitaj više →</a>
+      </article>
+      <article class="post">
+        <h3>Naslov bloga 2</h3>
+        <p>Uvodni tekst bloga...</p>
+        <a href="#">Pročitaj više →</a>
+      </article>
+      <!-- više postova -->
+    </div>
   </section>
 
-  <!-- Kontakt -->
   <section id="contact">
     <h2>Kontakt</h2>
-    <p>📧 <a href="mailto:tvoja@email.hr">tvoja@email.hr</a></p>
+    <p>Ako želiš surađivati ili imaš bilo kakvo pitanje, piši mi:</p>
+    <form action="mailto:tvoj@email.hr" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Ime" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Poruka" rows="5" required></textarea>
+      <button type="submit">Pošalji</button>
+    </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 Ana</p>
+    <p>&copy; 2025 Marta.</p>
   </footer>
 </body>
 </html>
