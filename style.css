@@ -3,14 +3,18 @@ body {
   font-family: 'Proza Libre', sans-serif;
   background: #fff;
   color: #000;
+}
+
+.container {
   padding: 0 6rem;
+  box-sizing: border-box;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1rem 6rem;
 }
 .logo img { max-height: 40px; }
 
@@ -22,7 +26,7 @@ body {
 }
 
 .hero {
-  padding: 5rem 0;
+  padding: 5rem 6rem;
 }
 .hero h1 {
   max-width: 800px;
@@ -35,7 +39,7 @@ body {
 }
 
 .works {
-  padding: 3rem 0;
+  padding: 3rem 6rem;
 }
 .works h2 { margin-bottom: 2rem; }
 .grid {
@@ -52,7 +56,7 @@ body {
 
 .collab {
   text-align: center;
-  padding: 3rem 0;
+  padding: 3rem 6rem 6rem; /* dodan veći razmak prije footera */
 }
 .btn {
   display: inline-block;
@@ -65,7 +69,7 @@ body {
 }
 
 .about, .services, .contact, .project-detail {
-  padding: 3rem 0;
+  padding: 3rem 6rem;
 }
 .about {
   display: flex;
@@ -108,6 +112,8 @@ body {
   align-items: center;
   padding: 0 6rem;
   height: 390px;
+  width: 100%; /* puna širina */
+  box-sizing: border-box;
 }
 .footer-logo img { max-height: 80px; }
 .footer-links { display: flex; gap: 1.5rem; }
@@ -119,9 +125,8 @@ body {
 
 /* Responsive */
 @media(max-width: 768px){
-  body { padding: 0 1rem; }
-  .about { flex-direction: column; }
-  .navbar { flex-direction: column; align-items: flex-start; }
+  .navbar { flex-direction: column; align-items: flex-start; padding: 1rem; }
+  .hero, .works, .about, .services, .contact, .collab { padding: 2rem 1rem; }
   .grid { grid-template-columns: 1fr; }
   .footer { flex-direction: column; justify-content: center; align-items: flex-start; height: auto; padding: 2rem 1rem; }
 }
