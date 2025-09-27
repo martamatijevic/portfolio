@@ -2,119 +2,89 @@ body {
   margin: 0;
   font-family: 'Proza Libre', sans-serif;
   color: #000;
-  background: #fff;
-  padding: 0;
 }
-header {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 6rem;
+  padding: 1rem 2rem;
 }
-header .logo img {
-  height: 50px;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
-nav a {
+.nav-links a {
+  margin-left: 1.5rem;
   text-decoration: none;
   color: #000;
 }
 .hero {
-  padding: 6rem;
+  padding: 4rem 2rem;
 }
-.hero h1 {
+.hero-title {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 600;
+  font-style: italic;
   font-size: 2rem;
-  margin-bottom: 1rem;
 }
-.hero-sub {
+.hero-subtitle {
   font-size: 1.2rem;
+  margin-top: 1rem;
 }
 .works {
-  padding: 0 6rem 6rem 6rem;
-}
-.works-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  padding: 2rem;
 }
-.works-grid img {
-  width: 100%;
-  display: block;
+.works h3 {
+  text-decoration: none;
+  color: #000;
 }
-.works-grid h3 {
-  margin: 0.5rem 0 0;
-}
-.collab {
+.collaborate {
   text-align: center;
-  padding: 4rem 0 8rem;
+  padding: 6rem 2rem 8rem 2rem;
+}
+.collaborate h2 {
+  font-size: 3rem;
 }
 .btn {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
-  border: 1px solid #000;
+  padding: 0.8rem 2rem;
+  background: #000;
+  color: #fff;
   text-decoration: none;
-  color: #000;
   margin-top: 1rem;
 }
-.about {
-  padding: 6rem;
+.btn:hover {
+  background: #444;
 }
-.about-content {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
+.btn.send {
+  float: right;
+  height: 3rem;
 }
-.about-content img {
-  width: 50%;
-}
-.services {
-  margin-top: 3rem;
-}
-.services h2 {
-  font-size: 1.5rem;
-}
-.contact {
-  padding: 6rem;
-}
-.contact form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 500px;
-}
-footer {
-  width: 100vw;
-  background-color: #000;
+.footer {
+  background: #000;
   color: #fff;
-  height: 390px;
+  padding: 2rem;
+}
+.footer-content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 6rem;
-  box-sizing: border-box;
+  align-items: center;
 }
-footer a {
+.footer-links a {
+  display: block;
   color: #fff;
-  margin-left: 1rem;
   text-decoration: none;
-}
-.footer-logo img {
-  height: 60px;
+  margin-top: 0.5rem;
 }
 @media (max-width: 768px) {
-  header, .hero, .works, .about, .contact {
-    padding: 2rem;
-  }
-  .about-content {
+  .footer-content {
     flex-direction: column;
+    align-items: flex-start;
   }
-  .works-grid {
-    grid-template-columns: 1fr;
+  .nav-links {
+    display: none;
+  }
+  .nav-links.nav-active {
+    display: flex;
+    flex-direction: column;
   }
 }
