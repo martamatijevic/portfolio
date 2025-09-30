@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marta Studio</title>
-  <link href="style.css" rel="stylesheet">
+  <title>Marta Studio - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="navbar container">
-    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Marta Studio"></a></div>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="#works">Works</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Marta Studio Logo"></a></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#works">Works</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="burger">☰</div>
     </nav>
   </header>
 
@@ -23,26 +26,49 @@
   </section>
 
   <section id="works" class="works container">
-    <div class="works-grid">
-      <a href="project1.html"><img src="images/project1.jpg"><h3><strong>Glazbena škola Požega</strong></h3></a>
-      <a href="project2.html"><img src="images/project2.jpg"><h3><strong>Ecopure</strong></h3></a>
-      <a href="project3.html"><img src="images/project3.jpg"><h3><strong>Music Band Detmeć</strong></h3></a>
-      <a href="project4.html"><img src="images/project4.jpg"><h3><strong>Aurea Fest Požega</strong></h3></a>
-      <a href="project5.html"><img src="images/project5.jpg"><h3><strong>Forsight</strong></h3></a>
-      <a href="project6.html"><img src="images/project6.jpg"><h3><strong>ADD Farben</strong></h3></a>
+    <div class="project">
+      <img src="images/project1.jpg" alt="Glazbena škola Požega">
+      <h2><a href="project1.html">Glazbena škola Požega</a></h2>
+    </div>
+    <div class="project">
+      <img src="images/project2.jpg" alt="Ecopure">
+      <h2><a href="project2.html">Ecopure</a></h2>
+    </div>
+    <div class="project">
+      <img src="images/project3.jpg" alt="Music Band Detmeć">
+      <h2><a href="project3.html">Music Band Detmeć</a></h2>
+    </div>
+    <div class="project">
+      <img src="images/project4.jpg" alt="Aurea Fest Požega">
+      <h2><a href="project4.html">Aurea Fest Požega</a></h2>
+    </div>
+    <div class="project">
+      <img src="images/project5.jpg" alt="Forsight">
+      <h2><a href="project5.html">Forsight</a></h2>
+    </div>
+    <div class="project">
+      <img src="images/project6.jpg" alt="ADD Farben">
+      <h2><a href="project6.html">ADD Farben</a></h2>
     </div>
   </section>
 
+  <section class="collaborate container">
+    <h2>Let’s collaborate</h2>
+    <a href="contact.html" class="btn">Contact us</a>
+  </section>
+
   <footer class="footer">
-    <div class="footer-content container">
-      <div class="footer-logo"><a href="index.html"><img src="images/logo.png" alt="Marta Studio"></a></div>
+    <div class="footer-container">
+      <div class="footer-logo"><a href="index.html"><img src="images/logo.png" alt="Marta Studio Logo"></a></div>
       <div class="footer-links">
-        <a href="https://www.behance.net/" target="_blank">Behance</a>
-        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-        <a href="https://www.pinterest.com/" target="_blank">Pinterest</a>
+        <a href="#">Behance</a>
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
         <a href="contact.html">Contact</a>
       </div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,33 +1,184 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  background: #fff;
+}
 
-body { font-family: 'Open Sans', sans-serif; margin: 0; padding: 0; }
-h1, h2, h3 { font-family: 'Bodoni Moda', serif; }
-.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
 
-/* Navbar */
-.navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
-.navbar .logo img { max-width: 140px; } /* veći logo u navbaru */
-.nav-links a { margin-left: 1.5rem; text-decoration: none; color: black; }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
 
-/* Hero */
-.hero { padding: 4rem 0; }
-.hero h1 { font-family: 'Bodoni Moda', serif; font-weight: 600; font-style: italic; font-size: 2rem; }
-.hero p { font-size: 1.2rem; margin-top: 1rem; }
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
 
-/* Works */
-.works-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
-.works-grid img { width: 100%; display: block; }
-.works-grid h3 { margin-top: 0.5rem; font-size: 1.2rem; color: black; }
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+}
 
-/* Footer */
-.footer { background: #000; color: #fff; padding: 3rem 0; width: 100%; }
-.footer-content { display: flex; justify-content: space-between; align-items: center; }
-.footer-logo img { max-width: 90px; } /* manji logo u footeru */
-.footer-links a { color: #fff; margin-left: 1.5rem; text-decoration: none; }
+.hero {
+  padding: 6rem 0 6rem 0;
+}
 
-/* Mobile */
+.hero h1 {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  max-width: 700px;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+.project h2 a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.collaborate {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.collaborate h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 3rem 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-links a {
+  color: #fff;
+  display: block;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+.about-content img {
+  width: 50%;
+  border-radius: 8px;
+}
+
+.services {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  margin: 0.5rem 0;
+}
+
+.marta {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.contact input, .contact textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact textarea {
+  min-height: 150px;
+}
+
+.contact .send {
+  align-self: flex-end;
+}
+
 @media (max-width: 768px) {
-  .works-grid { grid-template-columns: 1fr; }
-  .navbar .logo img { max-width: 100px; }
-  .footer-content { flex-direction: column; text-align: center; }
-  .footer-links { margin-top: 1rem; }
+  .works {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links.nav-active {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
 }
