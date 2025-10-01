@@ -1,56 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Marta Studio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo"><a href="index.html">Marta Studio</a></div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#works">Works</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo-link" href="index.html">
+        <img class="logo-img" src="images/logo.png" alt="Marta Studio logo">
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="burger" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
   </header>
 
-  <section class="hero">
-    <h1>Making brand design that connects with people and tells a story</h1>
-    <p>Our mission is to craft brand visuals that are not only beautiful but also meaningful and strategic.</p>
-  </section>
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1 class="hero-title">Making brand design that connects with people and tells a story</h1>
+        <p class="hero-sub">Our mission is to craft brand visuals that are not only beautiful but also meaningful and strategic.</p>
+      </div>
+    </section>
 
-  <section id="works" class="works">
-    <h2>Works</h2>
-    <div class="works-grid">
-      <div class="work-item"><a href="project1.html"><img src="images/project1.jpg" alt=""><h3>Glazbena škola Požega</h3></a></div>
-      <div class="work-item"><a href="project2.html"><img src="images/project2.jpg" alt=""><h3>Ecopure</h3></a></div>
-      <div class="work-item"><a href="project3.html"><img src="images/project3.jpg" alt=""><h3>Music Band Detmeć</h3></a></div>
-      <div class="work-item"><a href="project4.html"><img src="images/project4.jpg" alt=""><h3>Aurea Fest Požega</h3></a></div>
-      <div class="work-item"><a href="project5.html"><img src="images/project5.jpg" alt=""><h3>Forsight</h3></a></div>
-      <div class="work-item"><a href="project6.html"><img src="images/project6.jpg" alt=""><h3>ADD Farben</h3></a></div>
-    </div>
-  </section>
+    <!-- WORKS (2x3 grid desktop) -->
+    <section id="works" class="works">
+      <div class="container">
+        <div class="works-grid">
+          <a class="work" href="project1.html"><img src="images/project1.jpg" alt=""><h3>Glazbena škola Požega</h3></a>
+          <a class="work" href="project2.html"><img src="images/project2.jpg" alt=""><h3>Ecopure</h3></a>
+          <a class="work" href="project3.html"><img src="images/project3.jpg" alt=""><h3>Music Band Detmeć</h3></a>
+          <a class="work" href="project4.html"><img src="images/project4.jpg" alt=""><h3>Aurea Fest Požega</h3></a>
+          <a class="work" href="project5.html"><img src="images/project5.jpg" alt=""><h3>Forsight</h3></a>
+          <a class="work" href="project6.html"><img src="images/project6.jpg" alt=""><h3>ADD Farben</h3></a>
+        </div>
+      </div>
+    </section>
 
-  <section class="collaborate">
-    <h2>Let's collaborate</h2>
-    <a class="btn" href="contact.html">Contact us</a>
-  </section>
+    <!-- COLLABORATE -->
+    <section class="collaborate">
+      <div class="container collaborate-inner">
+        <h2>Let’s collaborate</h2>
+        <a class="btn contact-btn" href="contact.html">Contact us</a>
+      </div>
+    </section>
+  </main>
 
-  <footer>
-    <div class="footer-logo"><a href="index.html">Marta Studio</a></div>
-    <div class="footer-links">
-      <a href="#">Behance</a>
-      <a href="#">Instagram</a>
-      <a href="#">Pinterest</a>
-      <a href="contact.html">Contact</a>
+  <!-- FOOTER (full width) -->
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <a class="footer-logo" href="index.html">
+        <img src="images/logo.png" alt="Marta Studio logo">
+      </a>
+
+      <div class="footer-links">
+        <a href="https://www.behance.net" target="_blank" rel="noopener">Behance</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.pinterest.com" target="_blank" rel="noopener">Pinterest</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
