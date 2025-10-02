@@ -369,3 +369,18 @@ body{
   .footer-links{ flex-direction:column; gap:0.5rem; }
   .footer-inner img{ max-height:56px; } /* same size as nav */
 }
+
+/* Project page */
+.project-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.project-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
