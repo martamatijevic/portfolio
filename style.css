@@ -332,7 +332,6 @@ body{
 @media (max-width: 768px) {
   .contact-section h1 {
     font-size: 2rem;
-    text-align: center;
   }
 
   .contact-section p,
