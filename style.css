@@ -215,6 +215,11 @@ body{
 
 /* Mobile responsiveness: stack image above text for both Sekcija1 and Sekcija3 */
 @media (max-width: 768px) {
+  .about-section,
+  .services,
+  .about-designer {
+    margin-bottom: 80px; /* povećaj broj po želji (60px, 100px...) */
+  }
   .container { padding: 0 1.1rem; } /* ensure hero and about have lateral padding */
 
   .about-inner, .about-inner.reverse {
@@ -228,13 +233,6 @@ body{
     padding: 3.5rem 0;
   }
   .services-list { font-size: 1.08rem; }
-}
-@media (max-width: 768px) {
-  .about-section,
-  .services,
-  .about-designer {
-    margin-bottom: 80px; /* povećaj broj po želji (60px, 100px...) */
-  }
 }
 
 
