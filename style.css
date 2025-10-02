@@ -218,9 +218,9 @@ body{
   .about-section,
   .services-section,
   .marta-section {
-    margin-bottom: 80px; }/* povećaj broj po želji (60px, 100px...) */
+    margin-bottom: 60px; }/* povećaj broj po želji (60px, 100px...) */
   .about-designer {
-    margin-top: 80px; /* dodatni whitespace iznad sekcije "o meni" */
+    margin-top: 60px; /* dodatni whitespace iznad sekcije "o meni" */
   }
   .container { padding: 0 1.1rem; } /* ensure hero and about have lateral padding */
 
@@ -259,11 +259,6 @@ body{
   .about-text, .about-text p {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
-  }
-
-  /* zadrži veći razmak ispod cijele sekcije (ako si to htjela prije) */
-  .about-section, .services-section, .marta-section {
-    padding-bottom: 60px !important; /* prostor ISPOD svake sekcije */
   }
 
   /* dodatni prostor iznad 'o meni' sekcije (ako želiš) */
