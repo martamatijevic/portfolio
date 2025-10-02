@@ -237,7 +237,12 @@ body{
   }
   .services-list { font-size: 1.08rem; }
 }
-
+@media (max-width: 768px) {
+  .about-section img,
+  .marta-section img {
+    margin-bottom: 20px; /* manji razmak između slike i teksta */
+  }
+}
 
 /* contact form */
 .contact-form{
