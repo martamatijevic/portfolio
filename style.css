@@ -329,18 +329,28 @@ body{
   text-decoration: underline;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
-  .contact-section {
-    margin: 60px auto;
-    padding: 0 20px 60px;
+  .contact-section h1 {
+    font-size: 2rem;
+    text-align: center;
   }
 
-  .contact-form .btn.send {
-    align-self: center; /* gumb centriran na mobitelu */
-    width: 100%;
+  .contact-section p,
+  .direct-email {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .contact-form {
+    gap: 15px;
+  }
+
+  .contact-section {
+    margin: 80px auto;
+    padding: 0 15px 80px; /* još više whitespacea dolje */
   }
 }
+
 
 /* ---------- responsiveness: mobile ---------- */
 @media (max-width: 768px){
