@@ -342,7 +342,6 @@ body{
   }
 }
 
-
 /* ---------- responsiveness: mobile ---------- */
 @media (max-width: 768px){
   .container{ padding:0 1.1rem; } /* ensure hero no longer edge-to-edge on mobile */
