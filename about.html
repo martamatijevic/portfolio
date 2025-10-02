@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>About - Marta Studio</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,600&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- header (isti kao na drugim stranicama) -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo-link" href="index.html"><img class="logo-img" src="images/logo.png" alt="Marta Studio logo"></a>
@@ -27,10 +28,11 @@
   </header>
 
   <main>
+    <!-- Sekcija 1: slika lijevo, tekst desno (ostavljeno kako je) -->
     <section class="about-section">
       <div class="container about-inner">
         <div class="about-img">
-          <img src="images/about.jpg" alt="About">
+          <img src="images/about.jpg" alt="About Marta Studio">
         </div>
         <div class="about-text">
           <h1>About Marta Studio</h1>
@@ -39,27 +41,36 @@
       </div>
     </section>
 
-    <section class="services">
+    <!-- Sekcija 2: Services - SVIJETLO SIVA POZADINA, CENTRIRANO, VEĆI TEKST, bez crtice -->
+    <section class="services-section">
       <div class="container services-inner">
-        <h2>Services</h2>
+        <h2 class="services-title">Services</h2>
         <ul class="services-list">
-          <li>— Brand Design – logos, typography, identity systems</li>
-          <li>— Packaging Design – product packaging, labels, mockups</li>
-          <li>— Print Production – stationery, brochures, posters</li>
-          <li>— Digital Assets – presentations, web graphics, ads</li>
-          <li>— Social Media Design – templates, campaigns, digital storytelling</li>
+          <li>Brand Design – logos, typography, identity systems</li>
+          <li>Packaging Design – product packaging, labels, mockups</li>
+          <li>Print Production – stationery, brochures, posters</li>
+          <li>Digital Assets – presentations, web graphics, ads</li>
+          <li>Social Media Design – templates, campaigns, digital storytelling</li>
         </ul>
       </div>
     </section>
 
-    <section class="designer">
-      <div class="container designer-inner">
-        <h2>Marta Romac, Designer</h2>
-        <p>Marta Romac is the designer behind Marta Studio, with 5+ years of experience in crafting brand identities and visual storytelling. She is passionate about shaping the visual side of brands and creating meaningful connections through design.</p>
+    <!-- Sekcija 3: O dizajneru (OBRNUTO OD SEKCIJE 1 NA DESKTOPU) -->
+    <!-- .about-inner.reverse => na desktopu slika desno, tekst lijevo -->
+    <section class="marta-section">
+      <div class="container about-inner reverse">
+        <div class="about-img">
+          <img src="images/about-portrait.jpg" alt="Marta Romac">
+        </div>
+        <div class="about-text">
+          <h2>Marta Romac, Designer</h2>
+          <p>Marta Romac is the designer behind Marta Studio, with 5+ years of experience in crafting brand identities and visual storytelling. She is passionate about shaping the visual side of brands and creating meaningful connections through design.</p>
+        </div>
       </div>
     </section>
   </main>
 
+  <!-- footer (isti kao na ostalim stranicama) -->
   <footer class="site-footer">
     <div class="footer-inner container">
       <a class="footer-logo" href="index.html"><img src="images/logo.png" alt="Marta Studio logo"></a>
