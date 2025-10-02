@@ -104,7 +104,15 @@ body{
   font-weight:700; /* bold project names */
   font-size:1.1rem;
 }
-
+.works-grid a {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 600; /* ili bold po želji */
+  color: #000;
+  text-decoration: none;
+}
+.works-grid a:hover {
+  color: #333; /* malo tamnija nijansa pri hoveru, opcionalno */
+}
 /* remove link underline / color changes */
 .work a, .work a:link, .work a:visited { text-decoration:none; color:inherit; }
 
@@ -114,6 +122,8 @@ body{
   text-align:center;
 }
 .collaborate h2{
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 700;
   font-size:2rem;
   margin:0 0 1.25rem 0;
 }
