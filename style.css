@@ -218,7 +218,7 @@ body{
   .about-section,
   .services-section,
   .marta-section {
-    padding-bottom: 30px; }/* povećaj broj po želji (60px, 100px...) */
+    padding-bottom: 40px; }/* povećaj broj po želji (60px, 100px...) */
   .about-designer {
     margin-top: 40px; /* dodatni whitespace iznad sekcije "o meni" */
   }
