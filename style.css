@@ -218,7 +218,10 @@ body{
   .about-section,
   .services-section,
   .marta-section {
-    margin-bottom: 80px; /* povećaj broj po želji (60px, 100px...) */
+    margin-bottom: 80px; }/* povećaj broj po želji (60px, 100px...) */
+  .about-section img,
+  .marta-section img {
+    margin-bottom: 20px;} /* manji razmak između slike i teksta */
   }
   .about-designer {
     margin-top: 80px; /* dodatni whitespace iznad sekcije "o meni" */
@@ -236,13 +239,9 @@ body{
     padding: 3.5rem 0;
   }
   .services-list { font-size: 1.08rem; }
+
 }
-@media (max-width: 768px) {
-  .about-section img,
-  .marta-section img {
-    margin-bottom: 20px; /* manji razmak između slike i teksta */
-  }
-}
+
 
 /* contact form */
 .contact-form{
