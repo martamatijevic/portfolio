@@ -220,6 +220,9 @@ body{
   .about-designer {
     margin-bottom: 80px; /* povećaj broj po želji (60px, 100px...) */
   }
+  .about-designer {
+    margin-top: 80px; /* dodatni whitespace iznad sekcije "o meni" */
+  }
   .container { padding: 0 1.1rem; } /* ensure hero and about have lateral padding */
 
   .about-inner, .about-inner.reverse {
