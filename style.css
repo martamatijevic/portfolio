@@ -219,10 +219,6 @@ body{
   .services-section,
   .marta-section {
     margin-bottom: 80px; }/* povećaj broj po želji (60px, 100px...) */
-  .about-section img,
-  .marta-section img {
-    margin-bottom: 20px;} /* manji razmak između slike i teksta */
-  }
   .about-designer {
     margin-top: 80px; /* dodatni whitespace iznad sekcije "o meni" */
   }
@@ -239,9 +235,42 @@ body{
     padding: 3.5rem 0;
   }
   .services-list { font-size: 1.08rem; }
-
 }
+/* === Mobile: smanji razmak IZMEĐU slike i teksta unutar sekcija, ali zadrži veći razmak ISPOD svake sekcije === */
+@media (max-width: 768px) {
+  /* smanji gap unutar about-sekcija (slika + tekst bliže jedna drugoj) */
+  .about-inner,
+  .about-inner.reverse {
+    flex-direction: column;
+    gap: 0.6rem !important;   /* 0.6rem = ~9-10px; povećaj na 1rem ako želiš malo više */
+    align-items: center;
+  }
 
+  /* osiguraj da slike nemaju dodatan margin koji povećava razmak */
+  .about-img img,
+  .marta-section .about-img img {
+    margin: 0 0 0.4rem 0 !important; /* mali razmak ispod slike */
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* smanji eventualni top/bottom margin paragrafa koji bi razdvajali elemente */
+  .about-text, .about-text p {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* zadrži veći razmak ispod cijele sekcije (ako si to htjela prije) */
+  .about-section, .services-section, .marta-section {
+    padding-bottom: 60px !important; /* prostor ISPOD svake sekcije */
+  }
+
+  /* dodatni prostor iznad 'o meni' sekcije (ako želiš) */
+  .marta-section {
+    padding-top: 36px !important;
+  }
+}
 
 /* contact form */
 .contact-form{
