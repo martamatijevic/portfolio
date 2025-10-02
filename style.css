@@ -229,6 +229,24 @@ body{
     padding: 3.5rem 0;
   }
   .services-list { font-size: 1.08rem; }
+  .about-section img {
+    margin-top: 40px; /* po želji povećaj npr. 60px */
+  }
+
+  /* Veći razmak ispod teksta "About Marta Studio" */
+  .about-section .text {
+    margin-bottom: 40px; /* po želji povećaj npr. 60px */
+  }
+
+  /* Veći razmak ispod sekcije Services */
+  .services {
+    padding-bottom: 60px; /* po želji povećaj */
+  }
+
+  /* Veći razmak ispod teksta o meni */
+  .about-designer .text {
+    margin-bottom: 50px; /* po želji prilagodi */
+  }
 }
 
 /* contact form */
