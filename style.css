@@ -216,8 +216,8 @@ body{
 /* Mobile responsiveness: stack image above text for both Sekcija1 and Sekcija3 */
 @media (max-width: 768px) {
   .about-section,
-  .services,
-  .about-designer {
+  .services-section,
+  .marta-section {
     margin-bottom: 80px; /* povećaj broj po želji (60px, 100px...) */
   }
   .about-designer {
