@@ -147,6 +147,7 @@ body{
   background:var(--black);
   color:var(--white);
   margin-top:2rem;
+  padding: 60px 20px;
 }
 .footer-inner{
   display:flex;
