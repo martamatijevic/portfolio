@@ -394,3 +394,8 @@ body{
   color: #333; /* ili crna */
 }
 
+.project-description {
+  margin-bottom: 40px; /* povećaj po želji, npr. 60px */
+}
+
+
