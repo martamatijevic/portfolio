@@ -398,7 +398,7 @@ body{
   margin-bottom: 40px; /* povećaj po želji, npr. 60px */
 }
 .project-images img:last-child {
-  margin-bottom: 80px; /* veći razmak od footera */
+  margin-bottom: 100px; /* veći razmak od footera */
 }
 
 
