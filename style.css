@@ -404,7 +404,7 @@ body{
 .project-navigation {
   display: flex;
   justify-content: space-between;
-  margin: 60px 0 80px; /* razmak iznad i ispod */
+  margin: 60px 0 100px; /* razmak iznad i ispod */
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
 }
