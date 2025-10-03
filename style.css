@@ -406,7 +406,7 @@ body{
   justify-content: space-between;
   align-items: center;
   max-width: 900px; /* isto kao i ostali sadržaj */
-  margin: 60px auto 80px; /* centrirano */
+  margin: 60px auto 60px; /* centrirano */
   padding: 0 20px;
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
