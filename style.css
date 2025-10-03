@@ -384,4 +384,12 @@ body{
   margin-bottom: 10px;
 }
 
+.project-type {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-top: -5px; /* približi ga naslovu */
+  margin-bottom: 20px; /* malo razmaka ispod */
+  color: #333; /* ili crna */
+}
 
