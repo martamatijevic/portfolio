@@ -404,7 +404,10 @@ body{
 .project-navigation {
   display: flex;
   justify-content: space-between;
-  margin: 60px 0 100px; /* razmak iznad i ispod */
+  align-items: center;
+  max-width: 900px; /* isto kao i ostali sadržaj */
+  margin: 60px auto 80px; /* centrirano */
+  padding: 0 20px;
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
 }
